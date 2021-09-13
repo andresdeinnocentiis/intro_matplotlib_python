@@ -32,10 +32,22 @@ if __name__ == '__main__':
 
     # Crear una "figura" y crear un "ax" con add_subplot
     # Graficar el "line plot" de "y" en función de "x"
-
+    fig = plt.figure()
+    
+    ax = fig.add_subplot()
+    ax.plot(x,y)
+    
+    
     # Colocar la leyenda y el label con el nombre de la función
     # Darle color a la línea a su elección
+    
+    
+    ax.plot(x, y, c='red', label='y = x**2')
+    ax.legend()
+    
 
     # Crear acá su gráfico
+    
+    plt.show()
 
     print("terminamos")
